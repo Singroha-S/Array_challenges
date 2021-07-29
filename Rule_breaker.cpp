@@ -16,16 +16,16 @@ int main()
         return 0;
     }
     int mx=INT_MIN;
-    int br=0;
+    int rb=0;
     for(int i=0;i<n;i++)
     {
 
         if(a[i]>mx && a[i]>a[i+1])
         {
-            br++;
+            rb++;
         }
       mx=max(mx,a[i]);
     }
-    cout<<br;
+    cout<<rb;
     return 0;
 }
