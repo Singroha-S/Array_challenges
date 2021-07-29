@@ -11,23 +11,23 @@ int main()
     }
 
     int ans=2;
-    int pd=a[1]-a[0];
+    int d=a[1]-a[0];
     int curr=2;
-    int j=2;
+    int i=2;
 
-    while(j<n)
+    while(i<n)
     {
-        if(a[j]-a[j-1]==pd)
+        if(a[i]-a[i-1]==d)
         {
             curr++;
         }
         else
         {
-            pd=a[j]-a[j-1];
+            d=a[i]-a[i-1];
             curr=2;
         }
         ans=max(ans,curr);
-        j++;
+        i++;
     }
 
     cout<<ans;
