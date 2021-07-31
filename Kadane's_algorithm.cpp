@@ -14,7 +14,7 @@ int main()
     for(int i=0;i<n;i++)
     {
         cs+=a[i];
-        if(a[i]<0)
+        if(cs<0)
         {
             cs=0;
         }
