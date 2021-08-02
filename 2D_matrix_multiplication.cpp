@@ -25,7 +25,7 @@ int main()
         for(int j=0;j<n3;j++)
             ans[i][j]=0;
     }
-    //multiply arr1 with arr2 and update in ans array
+    //multiply arr1 with arr2 and update in answer array
     for(int i=0;i<n1;i++)
     {
         for(int j=0;j<n3;j++)
