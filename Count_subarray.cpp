@@ -1,28 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
+int countsubset(int a[],int n)
+{
+    return (1<<n);
+}
 int main()
 {
-    int n;
-    cin>>n;
-    int a[n];
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
-    cout<<" "<<endl;
-    int c=0;
-    for(int i=0;i<n;i++)
-    {
-        for(int j=i;j<n;j++)
-        {
-            for(int k=i;k<=j;k++)
-            {
-                cout<<a[k]<<" ";
-            }
-            c++;
-            cout<<endl;
-        }
-    }
-    cout<<c+1;
+    int a[]={1,2,3};
+    int n=sizeof(a)/sizeof(a[0]);
+    cout<<countsubset(a,n);
     return 0;
 }
+
